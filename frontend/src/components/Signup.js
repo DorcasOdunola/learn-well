@@ -8,6 +8,7 @@ import FormControl from '@material-ui/core/FormControl';
 import { useState } from 'react';
 import Select from '@material-ui/core/Select';
 import useTry from './useTry.js';
+import { AppBar, Button } from '@material-ui/core';
 
 
 
@@ -30,9 +31,10 @@ const Signup = () => {
         <>
             <div className="container md:p-40">
                 <div className="md:w-1/2 mx-auto bg-white shadow-md">
+                    <h3 className="text-green-700 text-2xl text-center font-bold">USER SIGNUP</h3>
+
                     <Box>
                         <form action="" onSubmit={saveUser}>
-
                             <div className="grid md:grid-cols-2">
                                 <div className="m-5">
                                     <TextField id="outlined-basic" className="w-full" value={firstName} label="First Name" variant="outlined" onChange={(e)=>setFirstName(e.target.value)} />
@@ -48,7 +50,7 @@ const Signup = () => {
                                     <TextField id="outlined-basic" className="w-full" value={email} label="Email" variant="outlined" onChange={(e)=>setEmail(e.target.value)}/>
                                 </div>
                                 <div className="m-5">
-                                    <TextField id="outlined-basic" className="w-full" value={phoneNo} label="Phone Number"  onChange={(e)=>setPhoneNo(e.target.value)} />
+                                    <TextField id="outlined-basic" className="w-full" value={phoneNo} label="Phone Number" variant="outlined"  onChange={(e)=>setPhoneNo(e.target.value)} />
                                 </div>
                             </div>
 
@@ -74,29 +76,22 @@ const Signup = () => {
                                     {/* </Box> */}
                                    
                                 </div>
-
-                                {/* <Select></Select> */}
-                                <TextField
+                                {/* <TextField
                                   id=""
                                   label="Felix"
                                   select
                                   variant="outlined"
                                 //   value={}
                                 //   onChange={}
-
-                                
-                                  
-                                />
-                                {/* <MenuItem value={}></MenuItem> */}
-                                 <MenuItem value="Tutor">Tutor</MenuItem>
-                                <MenuItem value="Student">Student</MenuItem>
-                                {/* <div className="m-5">
+                                /> */}
+                                <div className="m-5">
                                     <TextField id="outlined-basic" className="w-full" value={password} label="Password" variant="outlined" onChange={(e)=>setPassword(e.target.value)} />
-                                </div> */}
+                                </div>
                             </div>
                             <div className="p-5 w-1/2 mx-auto">
                                 <button className="w-full py-2 px-4 bg-green-700 text-white font-semibold rounded-lg shadow-md hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-75;">Signup</button>
                             </div>
+                            <h3 className="text-sm text-center pb-5">Has an account already? <a href="#" className="text-green-900 font-bold">Login</a></h3>
                 
                         </form>
                     </Box>
