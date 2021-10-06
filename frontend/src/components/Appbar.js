@@ -6,8 +6,8 @@ import Typography from '@material-ui/core/Typography'
 const Appbar = () => {
     return (
         <div>
-            <AppBar position="fixed" className="bg-green-200">
-                <Toolbar className="bg-green-700">
+            <AppBar position="fixed">
+                <Toolbar className="bg-white text-green-700">
                   <div className="flex justify-center w-full">
                     <Typography variant="h6">
                         <h4 className="text-2xl">Learn Well</h4>
