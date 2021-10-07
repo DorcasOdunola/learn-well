@@ -1,12 +1,13 @@
-import { TextField } from "@material-ui/core"
+import TextField from '@mui/material/TextField'
+
 
 const Login = () => {
     return (
         <div>
-            <div className="container md:p-40">
-                <div className="md:w-1/2 mx-auto bg-white shadow-md p-5">
+            <div className="container md:p-36">
+                <div className="md:w-1/2 mx-auto bg-white shadow-md p-9">
                     <h3 className="text-green-700 text-2xl text-center font-bold">USER LOGIN</h3>
-                    <div className="w-full py-14">
+                    <div className="w-full py-5">
                         <TextField
                         id=""
                         label="Email"
