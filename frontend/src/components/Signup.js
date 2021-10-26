@@ -7,7 +7,7 @@ import FormControl from '@mui/material/FormControl';
 // import Select from '@mui/material/Select';
 import { useState } from 'react';
 import Select from '@mui/material/Select';
-import useTry from './useTry.js';
+
 
 
 
@@ -26,7 +26,7 @@ const Signup = () => {
         let user = {firstName, lastName, email, phoneNo, status, password};
         console.log(user);
     }
-    const classes = useTry();
+
     return (
         <>
             <div className="container md:px-40 md:py-14">
